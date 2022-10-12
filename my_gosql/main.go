@@ -1,3 +1,4 @@
+//连接数据库知识学习
 package my_gosql
 
 import (
