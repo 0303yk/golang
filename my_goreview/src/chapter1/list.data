@@ -1,0 +1,93 @@
+Course Details
+Day One
+Welcome
+This module covers general information about your instructor and course materials.
+
+Syntax And Types
+In this chapter we will cover the fundamentals of the Go programming language. We will cover the keywords, operators, and delimiters that make up the language, as well as the proper idioms to declare and structure your code. We will also cover data structures (structs) as well as how Go handles default values (zero value). An overview of how strings work in Go, how UTF-8 is handled, and the different types of string literals will also be covered.
+
+Finally, we will learn how to properly declare variables, constants, and how to use iota in Go.
+
+Arrays And Iteration
+Arrays in Go are useful when planning for detailed layout of memory. Using arrays can sometimes help avoid allocation. However, their primary use is for the building blocks of slices.
+
+This chapter will cover the basics of creating, initializing, and indexing an array. It will also cover basic loop constructs and loop control basics.
+
+Break
+Tea/Coffee Break.
+
+Slices
+Slices wrap arrays in Go, and provide a more general, powerful, and convenient interface to data sequences. In this chapter, you will cover slice basics such as creating, initializing, and iteration. You will also learn how to grow a slice, work with subsets of slices, and slice tricks.
+
+Maps
+Maps are a powerful built-in data structure that associates keys and values. In this chapter you will cover basic map creation, initialization, and iteration. You will discover how to determine if values exist in maps and how to update and delete map values.
+
+Day Two
+Pointers
+A pointer is a type that holds the address to the value of a variable. In this chapter we will learn about the difference between pass by value and pass by reference. We will also learn how to declare pointers, and how to reference values as pointers. The chapter will discuss performance and security and when to use pointers as well.
+
+Break
+Tea/Coffee Break.
+
+Functions
+Functions in Go are a primitive type. This chapter will cover how to declare and call functions. We will also cover how to send zero or many arguments, as well as receive zero or many arguments. Additionally, concepts such as defer, init, closures, and methods will also be discussed.
+
+Day Three
+Interfaces
+Interfaces in Go provide a way to specify the behavior of an object: If something can do this, then it can be used here. This chapter will take a look at how to use interfaces to abstract that behavior. Concepts such as the Empty Interface, satisfying multiple interfaces, and asserting for behavior will be covered. Additionally, this chapter will cover the difference between value and pointer receivers and how they affect the ability to satisfy an interface.
+
+Break
+Tea/Coffee Break.
+
+Embedding And Composition
+Go does not provide the typical type-driven notion of subclassing. However, it does have the ability to “borrow” pieces of an implementation by embedding types within a struct or interface. This chapter will cover how promotion from embedding works as well how collision and overriding are handled. We will also walk through how to embed types to be able to satisfy a specific interface.
+
+Day Four
+Errors
+Error handling in Go can feel a bit tedious at first. However, this chapter will cover the benefits of how Go's error model results in more reliable code. This chapter will also cover how to handle basic errors and return errors as an interface that satisfies the error type. Concepts such as custom error types, panics, recovering from panics, and sentinel errors are also covered.
+
+Concurrency
+Concurrent programming in many environments is made difficult by the subtleties required to implement correct access to shared variables. Go encourages a different approach in which shared values are passed around on channels and, in fact, never actively shared by separate threads of execution.
+
+This chapter will cover concurrency as it pertains to Go, what goroutines are, as well as a basic overview of the scheduler and terminology used.
+
+Break
+Tea/Coffee Break.
+
+Concurrency With The Sync Package
+This chapter covers goroutines and how to synchronize communication between them. Mechanics for synchronization such as WaitGroups and Mutexes are explored along with the corresponding patterns for each. Additionallywe will cover how to spot common concurrency bugs and tools used to debug them.
+
+Concurrency With Channels
+Channels are a conduit in Go used to communicate between goroutines. This chapter covers basic channel usage along with the corresponding patterns for each. Find out the difference between a buffered and unbuffered channel, and when to use them. Also discover how to use channels for signaling for concepts such as graceful application shutdown. Finally, learn how to spot common concurrency pitfalls and how to properly structure your concurrent code for to avoid them.
+
+Day Five
+Context
+Package context defines the Context type, which carries deadlines, cancelation signals, and other request-scoped values across API boundaries and between processes. Context is used for controlling concurrent subsystems in your application. This chapter will cover the different kinds of behavior with contexts including canceling, timeouts, and values.
+
+Modules And Packages
+Package management is essential in creating repeatable builds in your software. In this chapter we will learn how to add and remove Modules, troubleshoot package dependencies, and understand the files that control current dependencies. This chapter will also cover what packages are, and some common approaches for structuring packages in your Go project.
+
+Break
+Tea/Coffee Break.
+
+Building And Compiling Go Applications
+Go has the ability to build and cross compile with ease. This chapter will cover the different ways to build your binary and additionally covers concepts for embedding build information such as version and GitHub SHA-1 hash. See how build tags are used to conditionally include specific branches of code by targeting specific platforms or simply using the tags provided.
+
+Tooling
+Go ships with a strong suite of built in tools. This chapter will go over the most common tools and how to use them in your daily development workflow. In addition to the tools that ship with Go, there are a set of very important linters and vetters that can catch runtime bugs as well as significantly improve code quality and performance. This chapter shows what those tools are and how to use them.
+
+Testing Basics
+Testing in Go is easy, and simple to use. There is a strong emphasis on testing in Go. The compiler will catch a lot of bugs for you, but it can not ensure your business logic is sound or bug-free.
+
+While the testing package isn't large, there are some features that are not properly understood. In this chapter we will cover the following concepts:
+
+*testing.T
+Error vs. Fatal
+Failure Messages
+Helpers
+Testing Packages
+Table Driven Testing
+Table driven tests can be used to cover a lot of ground quickly while re-using common setup and comparison code. Table driven testing is not unique to Go, however, it is very powerful. In this module we will cover the different ways to create, run, and isolate table driven tests.
+
+Finalize
+This chapter covers where to get more support on Go, recommends books and videos, and list the contact information for our instructors.
