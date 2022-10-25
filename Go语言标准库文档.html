@@ -1,1 +1,0 @@
-https://studygolang.com/pkgdoc
